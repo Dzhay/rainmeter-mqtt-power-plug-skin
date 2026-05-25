@@ -1,10 +1,10 @@
-# Tasmota Wattage Monitor (Rainmeter Skin)
+# Smart Power Plug Wattage Monitor (Rainmeter Skin)
 
 Uses the [MqttClient Plugin](https://github.com/fvanroie/MqttClientPlugin) for Rainmeter.
 
 ## 📋 About
 
-A lightweight Rainmeter skin that displays real-time wattage info from a Tasmota power plug via MQTT.
+A lightweight Rainmeter skin that displays real-time wattage info from a smart power plug via MQTT.
 
 ![Example Screenshot](https://github.com/Dzhay/rainmeter-tasmota-skin/blob/main/tasmota-wattage/tasmota-wattage-example.png)
 
@@ -35,6 +35,8 @@ PowerDelta 101
 
 This enables reporting when power usage changes by 1%.  
 More info: [Tasmota PowerDelta Documentation](https://tasmota.github.io/docs/Commands/#powerdelta)
+
+For other types of smart power plugs check documentation.
 
 ## 🪪 License
 
