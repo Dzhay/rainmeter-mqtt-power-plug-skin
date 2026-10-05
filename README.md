@@ -6,26 +6,32 @@ Uses the [MqttClient Plugin](https://github.com/fvanroie/MqttClientPlugin) for R
 
 A lightweight Rainmeter skin that displays real-time wattage info from a smart power plug via MQTT.
 
-![Example Screenshot](https://github.com/Dzhay/rainmeter-tasmota-skin/blob/main/tasmota-wattage/tasmota-wattage-example.png)
+![Example Screenshot](docs/screenshot.png)
 
 ## ⚙️ Installation & Usage
 
-1. Install the `.rmskin` package  
+1. Download `Installer/rainmeter-mqtt-power-1.0.rmskin` and install it.
    *(Includes MqttClientPlugin v0.2.5)*
 
-2. Open `tasmota-wattage.ini` and update the following:
+2. Right-click the skin, choose **Edit settings** and fill in:
 
    ```ini
-   [mqttServer]
-   Server=INPUT_MQTT_BROKER_IP_HERE  ; Replace with your MQTT broker IP
-
-   [powerImport]
-   Topic=POWERPLUG/TOPIC/SENSOR      ; Replace with your actual topic
+   MqttServer=192.168.1.100                     ; your MQTT broker IP or hostname
+   MqttTopic=powerplug/tasmota_EXAMPLE/SENSOR   ; your actual topic
+   MqttUser=                                    ; only if your broker needs a login
+   MqttPassword=
    ```
 
-3. Load the skin via Rainmeter.
+3. Save. The skin reloads by itself within a few seconds.
+
+Upgrading with a newer `.rmskin` keeps your settings. `Settings.inc` is stored
+as plain text, so never share it.
+
+Colours, fonts and layout are in `@Resources/Variables.inc`.
 
 ## 🔌 Tasmota Changes
+
+Tips if you're using a Tasmota smart power plug
 
 In your Tasmota console, run:
 
@@ -37,6 +43,15 @@ This enables reporting when power usage changes by 1%.
 More info: [Tasmota PowerDelta Documentation](https://tasmota.github.io/docs/Commands/#powerdelta)
 
 For other types of smart power plugs check documentation.
+
+## 🛠️ Building
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\build.ps1
+```
+
+This writes `Installer\rainmeter-mqtt-power-<version>.rmskin`, taking the version and
+author from `rainmeter-mqtt-power.ini` and bundling the plugin DLLs from `Plugins\`.
 
 ## 🪪 License
 
