@@ -24,10 +24,13 @@ A lightweight Rainmeter skin that displays real-time wattage info from a smart p
 
 3. Save. The skin reloads by itself within a few seconds.
 
+To change the size of the wattage text, set `FontSizeValue` in the same file
+(default `23`). The card resizes to fit.
+
 Upgrading with a newer `.rmskin` keeps your settings. `Settings.inc` is stored
 as plain text, so never share it.
 
-Colours, fonts and layout are in `@Resources/Variables.inc`.
+Colours, font face and layout are in `@Resources/Variables.inc`.
 
 ## 🔌 Tasmota Changes
 

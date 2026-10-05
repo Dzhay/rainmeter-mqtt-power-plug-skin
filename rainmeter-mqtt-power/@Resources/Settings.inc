@@ -18,3 +18,6 @@ MqttTopic=
 
 MqttUser=
 MqttPassword=
+
+; Size of the wattage text. Default: 23
+FontSizeValue=23
