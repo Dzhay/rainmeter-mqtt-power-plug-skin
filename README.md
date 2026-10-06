@@ -8,7 +8,7 @@ A lightweight Rainmeter skin that displays real-time wattage info from a smart p
 
 ![Example Screenshot](docs/screenshot.png)
 
-![Live wattage updates](docs/demo.gif)
+<img src="docs/demo.gif" alt="Live wattage updates" width="243">
 
 ## ⚙️ Installation & Usage
 
