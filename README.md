@@ -8,6 +8,8 @@ A lightweight Rainmeter skin that displays real-time wattage info from a smart p
 
 ![Example Screenshot](docs/screenshot.png)
 
+![Live wattage updates](docs/demo.gif)
+
 ## ⚙️ Installation & Usage
 
 1. Download `Installer/rainmeter-mqtt-power-1.0.rmskin` and install it.
